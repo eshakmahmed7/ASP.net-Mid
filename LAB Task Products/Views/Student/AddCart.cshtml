@@ -1,0 +1,33 @@
+﻿@model LabTaskPractice.Models.Entity.Student
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<form action="" method="post">
+    <table class=" table table-bordered" a>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+
+        
+        
+            <tr>
+                <td> @Model.Id</td>
+                <td> @Model.Name</td>
+                <td> @Model.Price</td>
+                <td> @Model.Quantity</td>
+                <td> @Model.Description</td>
+
+                
+             </tr>
+
+
+            
+        </table>
+</form>
