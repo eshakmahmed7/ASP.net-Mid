@@ -1,0 +1,29 @@
+﻿@model LabTaskPractice.Models.Entity.Student
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form action="/Student/Create" method="post">
+    Name: <input type="text" name="Name" value="" class="form-control" />
+    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+    <br />
+    Price: <input type="text" name="Price" value="" class="form-control" />
+    @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
+
+    <br />
+    Quantity: <input type="text" name="Quantity" value="" class="form-control" />
+    @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })
+    <br />
+    Description: <input type="text" name="Description" value="" class="form-control" />
+    @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    <br />
+    <input type="submit" value="Add" class="btn btn-primary" />
+
+</form>
+
+    
+    
